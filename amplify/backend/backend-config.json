@@ -7,7 +7,7 @@
             "UserPoolId"
           ],
           "category": "auth",
-          "resourceName": "amplifyapp6d39b558"
+          "resourceName": "amplifyapp531a7ca0"
         }
       ],
       "output": {
@@ -16,12 +16,15 @@
             {
               "authenticationType": "AMAZON_COGNITO_USER_POOLS",
               "userPoolConfig": {
-                "userPoolId": "authamplifyapp6d39b558"
+                "userPoolId": "authamplifyapp531a7ca0"
               }
             }
           ],
           "defaultAuthentication": {
-            "authenticationType": "AWS_IAM"
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
           }
         }
       },
@@ -30,7 +33,7 @@
     }
   },
   "auth": {
-    "amplifyapp6d39b558": {
+    "amplifyapp531a7ca0": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -53,6 +56,31 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "lastPushTimeStamp": "2024-01-18T00:26:03.602Z",
+      "service": "amplifyhosting",
+      "type": "cicd"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_hosting_amplifyhosting_appId": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_type": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
+        }
+      ]
     }
   }
 }
