@@ -23,6 +23,9 @@
           "appId": "d1a5f4l47m118c",
           "type": "cicd"
         }
+      },
+      "storage": {
+        "imagestorage": {}
       }
     }
   }

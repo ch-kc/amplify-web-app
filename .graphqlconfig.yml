@@ -2,14 +2,14 @@ projects:
   amplifyapp:
     schemaPath: amplify/backend/api/amplifyapp/build/schema.graphql
     includes:
-      - senior-proj/amplify-app/node_modules/graphql
+      - senior-proj/amplify-app/graphql
     excludes:
       - ./amplify/**
     extensions:
       amplify:
         codeGenTarget: javascript
         generatedFileName: ''
-        docsFilePath: senior-proj/amplify-app/node_modules
+        docsFilePath: senior-proj/amplify-app
         region: us-east-1
         apiId: null
         maxDepth: 2
